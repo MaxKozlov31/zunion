@@ -1,0 +1,135 @@
+.cases {
+    display: flex;
+    padding-top: 64px;
+    background-color: #EBF0FA;
+    position: relative;
+
+    &_sidebar {
+        
+        height: 430px;
+        width: 270px;
+        border-right: 2px dotted #000;
+        position: absolute;
+        /* border: 60px solid transparent;
+        border-image-source: url('../img/dot.png'); */
+
+        &_list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 35px;
+            margin-top: -10px;
+
+            
+
+            & .techno {
+                color: #8A8A89;
+            } 
+            
+
+            &_item { 
+                 
+
+                color: #333;
+                cursor: pointer;
+                padding: 10px 10px;
+                /* margin-bottom: 12px; */
+
+                transition: .s linear;
+
+                &:hover {
+                    background-color: #000;
+                    border-radius: 20px;
+                    color: #D68F44;
+                }
+            }
+        }
+    }
+    
+
+    &_content {
+        
+        padding: 0 0 0 29%;
+        width: 100%;
+        
+        &_item {
+            position: relative;
+            margin-bottom: 140px;
+
+            &_section {
+                font-size: 20px;
+                line-height: 110%;
+
+                color: #4B66AB;
+
+                margin-bottom: 18px;
+            }
+
+            &_title {
+                display: flex;
+                justify-content: space-between;
+                font-size: 40px;
+                line-height: 110%;
+                color: #333333;
+                padding-right: 113px;
+
+                margin-bottom: 40px;
+
+                & a {
+                    padding-top: 11px;
+                }
+
+            }
+
+
+            & a {
+                font-size: 20px;
+                line-height: 110%;
+                text-transform: none;
+                color: #4B66AB;
+                left: 113px;            
+                
+            }
+
+            &_description {
+                display: flex;
+                justify-content: space-between;
+                font-size: 25px;
+                line-height: 110%;
+                
+                color: #898989;
+
+                margin: 50px 0 50px 0;
+            }
+
+            &_pos {
+                position: relative;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: hidden;
+
+                &_slider {
+                    position: relative;
+                    display: flex;
+                    width: 1500px;
+
+                    &_item {
+                        position: relative;
+                        width: 288px;
+                        margin-right: 50px;
+                        padding: 5px 0 15px 5px;
+                        filter: drop-shadow(3px 3px 3px #b8c6d6);
+                              
+                        &_agr {
+                            width: 627px;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}
+
+hr {
+border-bottom: 1px solid #898989;
+} 

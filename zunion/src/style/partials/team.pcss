@@ -1,0 +1,90 @@
+.team {
+    
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
+    &_title {
+        position:relative;
+        font-size: 150px;
+        font-weight: 700;
+        
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+        opacity: 0.1;
+        top: 150px;
+        /* margin-bottom: 50px; */
+        @media(--desktop) {
+            font-size: 120px;
+        }
+    }
+
+    &_persons {
+        /* position: relative; */
+        text-align: center;
+    
+        height: 380px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        @media(--desktop) {
+            height: 310px;
+        }
+
+        &_photo {
+            position: relative;
+            /* bottom: 0; */
+            /* display: inline-block; */
+            margin-left: -5%;
+            width: 13%;
+            transition-duration: .7s;
+            cursor: pointer;
+            
+            
+            &:first-child {
+                margin-left:0;
+            }
+            z-index:600;
+        }
+
+    }
+    
+    &_statistics {
+        display: flex;
+        justify-content: center;
+        background: #EBF0FA;
+
+        &_item {
+            display: inline-block;
+            width: 400px;
+            background: #fff;
+            margin: 78px 0 78px 20px;
+            padding: 63px 0 45px 63px;
+
+            &_title {
+                font-size: 70px;
+                line-height: 110%;
+                text-align: left;
+                color: #D68F44;
+                margin-bottom:35px;
+            }
+    
+            &_text {
+                font-size: 25px;
+                line-height: 110%;
+    
+                color: #333333;
+            }
+        }
+
+        z-index: 501;
+
+    }
+}

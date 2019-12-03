@@ -1,0 +1,403 @@
+@font-face {
+	font-family: 'Intro-Book';
+	src: url('../fonts/Intro-Book.eot');
+	src: local('☺'), url('../fonts/Intro-Book.woff') format('woff'), url('fonts/Intro-Book.ttf') format('truetype'), url('fonts/Intro-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Intro-Book';
+    font-size: 14px;
+    color: #6c7279;
+    -webkid-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0 0 29%;
+    text-align-last: left;
+}
+
+
+
+/* Header
+=========== */
+
+
+.header {
+    width: 100%;
+    height: 134px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 58px;
+    
+}
+
+
+
+
+
+
+/* Nav
+=================*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 17px;
+    line-height: 110%;
+}
+
+.nav_link {
+    display: inline-block;
+    margin-right: 44px;
+    color: #B5B5B5;
+    text-decoration: none;
+    opacity: .75;
+}
+
+.nav_link_number {
+    display: inline-block;
+    color: #000;
+    font-size: 19px;
+    padding-left: 33px;
+}
+
+.nav_link_en {
+    padding: 0 69px 0 16px;
+    
+
+}
+
+.nav_link:hover {
+    opacity: 1;
+}
+
+
+
+/* Intro
+=================== */
+
+.intro {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    height: 775px;
+    margin-top: 124px;
+    background: #fff url('../img/main.jpg') center no-repeat;
+    background-size: cover;
+}
+
+
+.intro_items {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+     
+}
+
+.intro_title {
+    font-size: 55px;
+    line-height: 110%;
+    color: #000;
+    margin-top: 187px;
+}
+
+.intro_buttons{
+    margin-top: 59px;
+}
+
+
+
+
+
+
+/* About us
+=============== */
+
+.about_us {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    height: 775px;
+    background: #000 url('../img/black-main.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.about_us_inf {
+    padding-top: 228px;
+}
+
+.about_us_title {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.about_us_text {
+    color: #A5A5A5;
+    font-size: 25px;
+}
+
+
+/* Clients
+================ */
+
+.clients {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    background: #EBF0FA;
+}
+
+.clients_inf {
+    padding-top: 90px;
+    color: #333333;
+}
+.clients_title {
+    font-size: 39px;
+    line-height: 110%;
+    padding-bottom: 70px;
+}
+
+.clients_comps {
+    padding-bottom: 66px;
+}
+
+.clients_desc {
+    font-size: 25px;
+    line-height: 120%;
+    padding-bottom: 90px;
+}
+
+
+/* Science
+================= */
+
+.scientific-activity {
+    display: flex;
+    justify-content: center;
+
+    
+    padding-top: 96px;
+    background: #fff;
+}
+
+
+
+.scientific-activity_item_title {
+    padding-bottom: 17px;
+    font-size: 39px;
+    line-height: 110%;
+    color: #232322;
+}
+
+.scientific-activity_item_text {
+    font-size: 20px;
+    line-height: 120%;
+    color: #7C7C7C;
+    padding-bottom: 56px;
+}
+
+.scientific-activity_item_directions {
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.contr {
+    margin-right:30px;
+}
+
+/* Directions
+================= */
+
+.directions {
+    
+
+    height: 673px;
+    padding-top: 167px;
+    background: #EBF0FA;
+}
+
+.directions_item {
+    padding-bottom: 17px;
+    font-size: 39px;
+    line-height: 110%;
+    color: #232322;
+}
+
+.directions_item_title {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    padding-left: 43px;
+    color: #223872;
+
+}
+
+li{
+    margin-top: 10px;
+    color: orange;
+}
+
+li:first-child {
+    margin-top:0;
+}
+
+li span {
+    color: #333333;
+}
+
+/* Buttons
+================== */
+
+.button {
+    display: inline-block;
+    width: 255px;
+    background-color:#D68F44;
+    padding: 19px 0;
+    border: 0;
+    font-family: 'Intro-Book';
+    cursor: pointer;
+    border-radius: 500px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear;
+}
+
+.button_science {
+    font-size: 20px;
+    width: auto;
+    background: #EBF0FA;
+    border-radius: 900px;
+    color: #333333;
+    padding: 19px 25px;
+    margin: 0 25px 25px 0;
+    text-transform: none;
+}
+
+
+.button_play {
+    width: 50px;
+    height: 50px;
+
+    background-color: #fff;
+    color: #000;
+    text-transform: capitalize;
+    border: 2px solid #333333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button_play_text {
+    font-size: 17px;
+    line-height: 110%;
+    color: #333;
+    text-decoration: none;
+    padding-left: 18px ;
+    margin-right: 54px;
+}
+.button_case {
+    border: 2px solid #333333;
+    text-transform: inherit;
+    background-color: #fff;
+    color: #000000;
+}
+
+.button_we_do {
+    width: auto;
+    padding: 23px 68px;
+    background: #fff;
+    color: #333;
+    border: 2px solid #DEDEDE;
+    text-transform: none;
+
+}
+
+
+/* We do
+============= */
+
+.we_do {
+    padding: 172px 0;
+}
+
+.we_do_item_title {
+    font-size: 39px;
+    color: #333333;
+    margin-bottom: 54px;
+
+}
+
+
+/* competencies
+======================= */
+
+.competencies {
+    background: #4B66AB;
+    padding: 120px 0;
+
+}
+
+.competencies_item_title {
+    padding-left: 43px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #EAAC36;
+}
+
+.direction_item_list {
+    font-size: 32px;
+    margin-bottom: 56px;
+}
+
+.wc {
+    color: #fff;
+}
+
+.button_competencies {
+    width: auto;
+    padding: 15px 68px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: none;
+    margin-left: 43px;
+    
+}

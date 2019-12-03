@@ -1,0 +1,39 @@
+/* Header
+=========== */
+
+
+.header {
+    width: 100%;
+    height: 134px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+
+    z-index: 1000;
+     
+    &_black {
+        background: #151514;
+    }
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 58px;
+        max-width: 1400px;
+        margin: auto;
+        
+    }
+
+    &.is-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+
+
