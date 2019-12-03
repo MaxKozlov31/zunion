@@ -1,0 +1,120 @@
+.flagman-news {
+    text-align: center;
+    padding-top: calc($gutter-step * 11);
+    padding-bottom: calc($gutter-step * 11);
+    transition: all $time ease;
+    border-bottom: 1px solid $cl-bd-grey;
+
+    @media (--desktop-lg) { 
+        padding-bottom: calc($gutter-step * 9);
+    }
+
+    @media (--desktop) { 
+        padding-top: calc($gutter-step * 9);
+        padding-bottom: calc($gutter-step * 4);
+    }
+
+    @media (--tablet-lg) {
+        padding-top: calc($gutter-step * 10);
+    }
+
+    @media (--tablet) {
+        text-align: left;
+        padding-top: calc($gutter-step * 4.5);
+    }
+
+    .news {
+
+        &-img {
+            min-width: 240px;
+            height: 100%;
+
+            @media (--tablet) {
+                height: 310px;
+                width: 100%;
+            }
+
+            &--1 {
+                background: url('../img/inhtml/news-img-1.jpg') no-repeat center / cover;
+            }
+
+            &--2 {
+                background: url('../img/inhtml/news-img-2.jpg') no-repeat center / cover;
+            }
+        }
+
+        &-text {
+            width: 63%;
+            text-align: left;
+            margin-left: calc($gutter-step * 5);
+
+            @media (--desktop) {
+                width: 100%;
+            }
+
+            @media (--tablet) {
+                margin-left: 0;
+            }
+        }
+
+        &__date {
+            margin-bottom: calc($gutter-step * 2);
+            font-size: 14px;
+            color: $cl-news-grey;
+        }
+
+        &__main-title {
+            margin-bottom: calc($gutter-step * 9);
+
+            @media (--desktop) {
+                margin-bottom: calc($gutter-step * 4);
+            }
+        }
+
+        &__title {
+            margin-bottom: calc($gutter-step * 2);
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        &__description {
+            color: $cl-grey;
+        }
+
+        &-list{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+
+            @media (--desktop) {
+                flex-wrap: wrap;
+            }
+
+            &-unit {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                height: 240px;
+                width: 49.5%;
+
+                @media (--desktop-lg) and (--desktop-min) {
+                    height: 310px;
+                }
+
+                @media (--desktop) {
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-top: calc($gutter-step * 5);
+                    margin-bottom: calc($gutter-step * 2);
+                }
+
+                @media (--tablet) {
+                    height: 700px;
+                    flex-wrap: wrap;
+                    margin-top: calc($gutter-step * 2.5);
+                }
+            }
+        }
+    }
+}
