@@ -272,13 +272,6 @@ button:focus {
         padding-bottom: 66px
     }
 
-@media(max-width: 1279px) {
-
-    .clients_comps {
-            width: 600px
-    }
-        }
-
 .clients_desc {
         font-size: 1.5625rem;
         line-height: 120%;
@@ -561,13 +554,6 @@ li span {
             opacity: 1;
         }
 
-@media(max-width: 1279px) {
-
-.nav {
-        display: none
-}
-    }
-
 .nav_toggle {
     position: absolute;
     top: 15px;
@@ -702,13 +688,6 @@ li span {
         /* margin-bottom: 50px; */
     }
 
-@media(max-width: 1279px) {
-
-    .team_title {
-            font-size: 7.5rem
-    }
-        }
-
 .team_persons {
         /* position: relative; */
         text-align: center;
@@ -720,14 +699,6 @@ li span {
         justify-content: center
 
     }
-
-@media(max-width: 1279px) {
-
-    .team_persons {
-            height: 310px
-
-    }
-        }
 
 .team_persons_photo {
             position: relative;
